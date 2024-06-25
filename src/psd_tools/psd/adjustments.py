@@ -561,7 +561,7 @@ class Levels(ListElement):
         extra_version = None
         if is_readable(fp, 6):
             signature, extra_version = read_fmt("4sH", fp)
-            print(signature, extra_version)
+            # print(signature, extra_version)
             # assert signature == b"Lvls", "Invalid signature %r" % (signature)
             # assert extra_version == 3, "Invalid extra version %d" % (extra_version)
             count = read_fmt("H", fp)[0]
